@@ -30,8 +30,12 @@
 
 ; Part 6 Implementation - Gabe
 (defun boolean-implies (a b)
-      ;Work in here
+      (not (and a (not b))) 
 )
+
+; Testing part 6 implementation
+(print(boolean-implies t nil))
+(print(boolean-implies nil nil))
 
 ; Part 7 implementation - Lena
 (defun boolean-iff (a b)
