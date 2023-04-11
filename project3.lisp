@@ -1,4 +1,4 @@
-; Part 1 Implementation
+; Part 1 Implementation - Gabe
 (defun set-member (set item) 
   (if (null set) 
       nil 
@@ -9,32 +9,36 @@
 (print(set-member '(1 2) 1))
 (print(set-member '(1 2) 3))
 
-; Part 3 Implementation
+; Part 2 Implementation - Andrick
+(defun set-union (set-1 set-2)
+      ;Work in here
+)
+; Part 3 Implementation - Jeremy
 (defun set-intersection (set-1 set-2)
       ;Your implementation go here
-      )
+)
 
-; part 4 Implementation
+; part 4 Implementation - Jeremy
 (defun set-diff (set-1 set-2)
       ;Your implementation go here
-      )
+)
 
-; Part 5 Implementation
+; Part 5 Implementation - Tram
 (defun boolean-xor (a b)
       ;Work in here
 )
 
-; Part 6 Implementation
+; Part 6 Implementation - Gabe
 (defun boolean-implies (a b)
       ;Work in here
 )
 
-; Part 7 implementation
+; Part 7 implementation - Lena
 (defun boolean-iff (a b)
       ;Work in here
 )
 
-; Part 8 implementation
+; Part 8 implementation - Lena
 (defun boolean-eval (exp)
       ;Work in here
 )
