@@ -18,3 +18,23 @@
 (defun set-diff (set-1 set-2)
       ;Your implementation go here
       )
+
+; Part 5 Implementation
+(defun boolean-xor (a b)
+      ;Work in here
+)
+
+; Part 6 Implementation
+(defun boolean-implies (a b)
+      ;Work in here
+)
+
+; Part 7 implementation
+(defun boolean-iff (a b)
+      ;Work in here
+)
+
+; Part 8 implementation
+(defun boolean-eval (exp)
+      ;Work in here
+)
