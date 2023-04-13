@@ -11,7 +11,10 @@
 
 ; Part 2 Implementation - Andrick
 (defun set-union (set-1 set-2)
-      ;Work in here
+  (let ((result set-1)))
+    (dolist (elem set-2 result)
+      (unless (member elem result)
+        (push elem result))))
 )
 ; Part 3 Implementation - Jeremy
 (defun set-intersection (set-1 set-2)
