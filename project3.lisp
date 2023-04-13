@@ -25,8 +25,21 @@
 
 ; Part 5 Implementation - Tram
 (defun boolean-xor (a b)
-	;Your implementation go here
+	
+   (if (not (null a))
+    (not (and a b)) 
+    
+    (if (not (null b))
+        (not (and a b))))
+     
 )
+
+; Testing with the examples provided
+(print(boolean-xor nil nil))
+(print(boolean-xor t t))
+(print(boolean-xor t nil))
+(print(boolean-xor nil t))
+
 
 ; Part 6 Implementation - Gabe
 (defun boolean-implies (a b)
