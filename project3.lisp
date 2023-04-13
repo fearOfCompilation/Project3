@@ -52,8 +52,20 @@
 
 ; Part 7 implementation - Lena
 (defun boolean-iff (a b)
-      ;Work in here
+(if (null a)
+    (not(or a b)) 
+    
+    (if (not (null a))
+        (and a b)))
+     
 )
+
+; Testing with the examples provided
+(print(boolean-iff nil nil))
+(print(boolean-iff t t))
+(print(boolean-iff t nil))
+(print(boolean-iff nil t))
+
 
 ; Part 8 implementation - Lena
 (defun boolean-eval (exp)
