@@ -25,11 +25,7 @@
 
 ; Part 5 Implementation - Tram
 (defun boolean-xor (a b)
-	(cond
-		((a (not b)) t)
-        	((b (not a)) t)
-		((a AND b) nil)
-	)
+	;Your implementation go here
 )
 
 ; Part 6 Implementation - Gabe
