@@ -52,7 +52,7 @@
 (print(boolean-implies t nil))
 (print(boolean-implies nil nil))
 
-; Part 7 implementation - Lena
+; Part 7 implementation - Tram
 (defun boolean-iff (a b)
 (if (null a)
     (not(or a b)) 
