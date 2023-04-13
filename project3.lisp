@@ -14,9 +14,11 @@
       ;Work in here
 )
 ; Part 3 Implementation - Jeremy
-(defun set-intersection (set-1 set-2)
-      ;Your implementation go here
-)
+ (defun set-intersection (set-1 set-2)
+  (cond ((null set-1) nil)
+        ((set-member set-2 (car set-1))
+         (cons (car set-1) (set-intersection (cdr set-1) set-2)))
+        (t (set-intersection (cdr set-1) set-2))))
 
 ; part 4 Implementation - Jeremy
 (defun set-diff (set-1 set-2)
