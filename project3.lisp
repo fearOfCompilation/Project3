@@ -22,8 +22,10 @@
 
 ; part 4 Implementation - Jeremy
 (defun set-diff (set-1 set-2)
-      ;Your implementation go here
-)
+  (cond ((null set-1) nil)
+        ((set-member set-2 (car set-1))
+         (set-diff (cdr set-1) set-2))
+        (t (cons (car set-1) (set-diff (cdr set-1) set-2)))))
 
 ; Part 5 Implementation - Tram
 (defun boolean-xor (a b)
