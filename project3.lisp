@@ -5,10 +5,6 @@
       (or (equal item (car set))           
           (set-member (cdr set) item))))
 
-; Testing with the examples provided
-(print(set-member '(1 2) 1))
-(print(set-member '(1 2) 3))
-
 ; Part 2 Implementation - Andrick
 (defun set-union (set-1 set-2)
   (let ((result set-1)))
@@ -32,20 +28,11 @@
 
 ; Part 5 Implementation - Tram
 (defun boolean-xor (a b)
-	
    (if (not (null a))
-    (not (and a b)) 
-    
+    (not (and a b))     
     (if (not (null b))
         (not (and a b))))
-     
 )
-
-; Testing with the examples provided
-(print(boolean-xor nil nil))
-(print(boolean-xor t t))
-(print(boolean-xor t nil))
-(print(boolean-xor nil t))
 
 
 ; Part 6 Implementation - Gabe
@@ -53,25 +40,14 @@
       (not (and a (not b))) 
 )
 
-; Testing part 6 implementation
-(print(boolean-implies t nil))
-(print(boolean-implies nil nil))
 
 ; Part 7 implementation - Tram
 (defun boolean-iff (a b)
 (if (null a)
-    (not(or a b)) 
-    
+    (not(or a b))     
     (if (not (null a))
         (and a b)))
-     
 )
-
-; Testing with the examples provided
-(print(boolean-iff nil nil))
-(print(boolean-iff t t))
-(print(boolean-iff t nil))
-(print(boolean-iff nil t))
 
 
 ; Part 8 implementation - Lena
