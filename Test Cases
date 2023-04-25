@@ -1,0 +1,39 @@
+
+
+;Part1
+; Testing with the examples provided
+(print(set-member '(1 2) 1))
+(print(set-member '(1 2) 3))
+
+;Part 2
+(print(set-union '(1 2) '(2 4))) 
+
+;Part 3
+
+(print(set-intersection '(1 2) '(2 4)))
+
+;Part 4
+(print(set-diff '(1 2) '(2 4)))
+
+;Part 5
+
+(print(boolean-xor nil nil))
+(print(boolean-xor t t))
+(print(boolean-xor t nil))
+(print(boolean-xor nil t))
+
+;Part 6
+
+(print(boolean-implies t nil))
+(print(boolean-implies nil nil))
+
+;Part 7
+
+(print(boolean-iff nil nil))
+(print(boolean-iff t t))
+(print(boolean-iff t nil))
+(print(boolean-iff nil t))
+
+;Part 8
+(print(boolean-eval '(and t nil)))
+(print(boolean-eval '(and t (or nil t)))
