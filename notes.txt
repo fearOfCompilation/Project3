@@ -47,6 +47,14 @@ definitions, along with any previously completed functions in this project:
     -(defun set-union (set-1 set-2)
       Your implementation go here
       )
+
+(defun set-union (set-1 set-2)
+  (cond ((null set-1) set-2)
+        ((null set-2) set-1)
+        ((set-member set-1 (car set-2))
+         (set-union set-1 (cdr set-2)))
+        (t (cons (car set-2) (set-union set-1 (cdr set-2))))))
+
 ----------------------------------------------------------------------
 3)
 - Return the intersection of set-1 and set-2.
