@@ -52,5 +52,11 @@
 
 ; Part 8 implementation - Lena
 (defun boolean-eval (exp)
-      ;Work in here
-)
+  (cond ((equal exp 'T) T)
+        ((equal exp 'NIL) NIL)
+        ((equal (first exp) 'NOT) (not (boolean-eval (second exp))))
+        ((equal (first exp) 'AND) (and (boolean-eval (second exp)) (boolean-eval (third exp))))
+        ((equal (first exp) 'OR) (or (boolean-eval (second exp)) (boolean-eval (third exp))))
+        ((equal (first exp) 'XOR) (boolean-xor (boolean-eval (second exp)) (boolean-eval (third exp))))
+        ((equal (first exp) 'IMPLIES) (boolean-implies (boolean-eval (second exp)) (boolean-eval (third exp))))
+        ((equal (first exp) 'IFF) (boolean-iff (boolean-eval (second exp)) (boolean-eval (third exp))))))
