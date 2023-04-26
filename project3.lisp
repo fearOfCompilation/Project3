@@ -5,12 +5,13 @@
       (or (equal item (car set))           
           (set-member (cdr set) item))))
 
-; Part 2 Implementation - Andrick
+; Part 2 Implementation - Andrick/Jeremy
 (defun set-union (set-1 set-2)
-  (let ((result set-1)))
-    (dolist (elem set-2 result)
-      (unless (member elem result)
-        (push elem result))))
+  (cond ((null set-1) set-2)
+        ((null set-2) set-1)
+        ((set-member set-1 (car set-2))
+         (set-union set-1 (cdr set-2)))
+        (t (cons (car set-2) (set-union set-1 (cdr set-2))))))
 )
 ; Part 3 Implementation - Jeremy
 (defun set-intersection (set-1 set-2)
