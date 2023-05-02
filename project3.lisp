@@ -12,7 +12,7 @@
         ((set-member set-1 (car set-2))
          (set-union set-1 (cdr set-2)))
         (t (cons (car set-2) (set-union set-1 (cdr set-2))))))
-)
+
 ; Part 3 Implementation - Jeremy
 (defun set-intersection (set-1 set-2)
    (cond ((null set-1) nil)
